@@ -39,9 +39,8 @@ directions.</p>
 
 {{!- BEGIN-SNIPPET with-demo -}}
 
-{{#liquid-with model as currentModel use="rotateBelow" class="demo-container"}}
-  {{currentModel.id}}
-  <button {{action "higher" currentModel}}>Go</button>
+{{#liquid-with test as best use="rotateBelow" class="demo-container"}}
+  {{best}}
 {{/liquid-with}}
 
 {{!- END-SNIPPET -}}
